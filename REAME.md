@@ -128,9 +128,30 @@ flowchart LR
 
 Também será possível enviar comandos para os dispositivos:
 
-```
+```mermaid
 
-Frontend → Backend → MQTT → Dispositivo
+
+flowchart LR
+
+    subgraph Edge Layer
+        A[ESP32 Simulator<br>Wokwi]
+    end
+
+    subgraph Messaging Layer
+        B[MQTT Broker<br>Mosquitto]
+    end
+
+    subgraph Application Layer
+        F[Backend API<br>Node.js]
+    end
+
+    subgraph Presentation Layer
+        G[Web Dashboard<br>React + Tailwind]
+    end
+
+    G --> F
+    F --> B
+    B --> A
 
 ```
 
@@ -316,19 +337,3 @@ Este material é indicado para:
 ## Licença
 
 Este projeto é disponibilizado para fins educacionais.
-
-
-## Autor
-
-Material desenvolvido para apoio às aulas da disciplina de **Internet das Coisas e Arquiteturas de Dados**.
-```
-
----
-
-Se quiser, eu também posso te gerar **3 coisas que deixam esse repositório MUITO mais profissional para alunos**:
-
-1️⃣ **diagrama de arquitetura em SVG para colocar no README**
-2️⃣ **docker-compose completo da arquitetura IoT**
-3️⃣ **estrutura ideal do repositório para aula (padrão usado em cursos internacionais)**
-
-Isso deixa o projeto **nível GitHub de curso profissional**.
