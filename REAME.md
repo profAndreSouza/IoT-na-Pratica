@@ -315,15 +315,6 @@ A infraestrutura incluirá:
 - Frontend React
 
 
-## Público-Alvo
-
-Este material é indicado para:
-
-- estudantes de **Tecnologia da Informação**
-- cursos de **Sistemas de Informação**
-- cursos de **Análise e Desenvolvimento de Sistemas**
-- interessados em **IoT e arquitetura de dados**
-
 
 
 ## Bibliografia Recomendada
