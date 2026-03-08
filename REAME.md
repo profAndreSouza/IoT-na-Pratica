@@ -47,7 +47,7 @@ Esses dados podem ser utilizados para:
 
 A arquitetura construída durante as aulas segue o fluxo abaixo:
 
-```
+```mermaid
 
 flowchart LR
 
@@ -81,7 +81,7 @@ flowchart LR
 
 Posteriormente evoluímos a arquitetura para incluir backend e frontend:
 
-```
+```mermaid
 
 flowchart LR
 
